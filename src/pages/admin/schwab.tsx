@@ -10,7 +10,7 @@ const SchwabTab = () => {
     try {
       const response = await fetch(`/api/schwab?symbol=${stock}`);
       const data = await response.json();
-      setMarketData(data);
+      if (data && data.price && data.change && data.volume) setMarketData(data);
     } catch (error) {
       console.error('Error fetching market data:', error);
     }
