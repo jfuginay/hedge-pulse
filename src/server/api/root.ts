@@ -3,6 +3,7 @@ import { userRouter } from "~/server/api/routers/user";
 import { groupRouter } from "~/server/api/routers/group";
 import { addressRouter } from "~/server/api/routers/address";
 import { stockRouter } from "~/server/api/routers/stocks";
+import { schwabRouter } from "~/server/api/routers/schwab";
 
 /**
  * This is the primary router for your server.
@@ -14,6 +15,7 @@ export const appRouter = createTRPCRouter({
   group: groupRouter,
   address: addressRouter,
   stock: stockRouter,
+  schwab: schwabRouter,
 });
 
 // Configuration for API endpoints

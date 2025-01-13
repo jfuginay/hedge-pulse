@@ -30,5 +30,3 @@ const Admin: NextPageWithLayout = () => {
 Admin.getLayout = (page) => <AdminLayout>{page}</AdminLayout>
 
 export default Admin;
-
-
